@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.quiz.QuizFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="#9AAEF7"
+        android:padding="16dp"
+        android:text="@string/quiz_question_label"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/answer0"
+        android:layout_width="320dp"
+        android:layout_height="72dp"
+        android:layout_margin="8dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="8dp"
+        android:text="Choix 0"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/answer1"
+        android:layout_width="320dp"
+        android:layout_height="72dp"
+        android:layout_margin="8dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="8dp"
+        android:text="Choix 1"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/answer2"
+        android:layout_width="320dp"
+        android:layout_height="72dp"
+        android:layout_margin="8dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="8dp"
+        android:text="Choix 2"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/answer3"
+        android:layout_width="320dp"
+        android:layout_height="72dp"
+        android:layout_margin="8dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="8dp"
+        android:text="Choix 3"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/validityText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Good Answer !!"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="180dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="8dp"
+            android:text="Suivant"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>
